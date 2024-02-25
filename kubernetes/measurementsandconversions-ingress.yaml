@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: measurementsandconversions-ingress
+  annotations:
+    # ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
+spec:
+  tls:
+    - hosts:
+        - measurementsandconversions.com
+      secretName: measurementsandconversionssecret
+  rules:
+    - host: measurementsandconversions.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: measurementsandconversions-service
+                port:
+                  number: 80

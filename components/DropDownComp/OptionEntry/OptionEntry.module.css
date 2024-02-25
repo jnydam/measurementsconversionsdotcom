@@ -1,0 +1,13 @@
+.optionEntryContainer {
+  display: flex;
+  height: 3rem;
+  min-height: 3rem;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  /* background-color: orange; */
+}
+
+.optionEntryContainer:hover {
+  background-color: #d3d3d3;
+}

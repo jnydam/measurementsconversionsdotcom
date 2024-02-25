@@ -1,0 +1,72 @@
+.upperSelectionContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  height: 7rem;
+  width: 60rem;
+  padding-left: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 0px 1px 8px 2px grey;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+.genericMobileOverlayComp {
+  display: none;
+}
+
+.mobileUpperSelectionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  min-height: 21rem;
+  width: 23rem;
+  border-radius: 0.3rem;
+  box-shadow: 0px 1px 8px 2px grey;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+.leftContainerMaterial {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 40rem;
+  /* background-color: blue; */
+}
+
+.selectButton {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 12rem;
+  margin-right: 1rem;
+  color: white;
+  background-color: #13394d;
+  outline: none;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 1px 2px black;
+  border-radius: 0.3rem;
+}
+
+.selectButton:hover {
+  background-color: #205e7f;
+}
+
+@media (max-width: 1150px) {
+  .genericConversionOverlayComp {
+    display: none;
+  }
+  .genericMobileOverlayComp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+  }
+}

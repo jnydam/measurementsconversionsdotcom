@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: measurementsandconversions-service
+spec:
+  selector:
+    app: measurementsandconversionsapp
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+      nodePort: 30800

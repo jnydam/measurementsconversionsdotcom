@@ -1,0 +1,29 @@
+.speedPageOutline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-end;
+  height: calc(100% - 6rem);
+  width: 100%;
+  background-color: #679bb6;
+}
+
+.lowerImageRectContainer {
+  display: flex;
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.speedOuterOverlay {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: center;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+}

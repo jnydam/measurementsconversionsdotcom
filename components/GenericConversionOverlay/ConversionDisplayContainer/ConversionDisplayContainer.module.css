@@ -1,0 +1,119 @@
+.conversionDisplayContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 13rem;
+  width: 60rem;
+  padding-left: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 0px 1px 8px 2px grey;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+.mobileConversionWrapper {
+  display: none;
+}
+
+.desktopConversionWrapper {
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.mobileConversionDisplayContainer {
+  display: none;
+}
+
+.leftSideEntryContainer {
+  display: flex;
+  height: 100%;
+  /* background-color: green; */
+  justify-content: flex-start;
+  width: 25rem;
+  align-items: center;
+}
+
+.rightSideEntryContainer {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  /* background-color: orange; */
+  width: 25rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.leftSideInput {
+  font-family: inherit;
+  text-align: center;
+  outline: none;
+  background-color: #f2f2f2;
+  border-radius: 0.3rem;
+  color: #007ebf;
+  border: 1.5px solid #0296e2;
+  font-size: 3.5rem;
+  height: 8rem;
+  width: 12rem;
+}
+
+.normalTextStyle {
+  font-size: 1.2rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.leftSideInput::-webkit-outer-spin-button,
+.leftSideInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.leftSideInput[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.rightSideNumberDisplay {
+  color: #007ebf;
+  font-weight: bold;
+  width: calc(11rem + 2px);
+  text-align: center;
+  overflow-x: auto;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 1150px) {
+  .conversionDisplayContainer {
+    display: none;
+  }
+
+  .mobileConversionWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    /* background-color: purple; */
+  }
+
+  .mobileConversionDisplayContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-bottom: 3rem;
+    min-height: 30rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 1px 8px 2px grey;
+    width: 23rem;
+  }
+
+  .desktopConversionWrapper {
+    display: none;
+  }
+
+  .genericMobileOverlayComp {
+    display: flex;
+    flex-direction: column;
+    min-height: 25rem;
+    width: 21rem;
+  }
+}

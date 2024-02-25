@@ -1,0 +1,23 @@
+.overviewCardRowCompContainer {
+  display: flex;
+  align-items: center;
+  min-height: 25rem;
+  min-width: 21rem;
+  justify-content: flex-start;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+@media (max-width: 1150px) {
+  .overviewCardRowCompContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100rem;
+    justify-content: flex-start;
+    min-width: 21rem;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: green;
+  }
+}
